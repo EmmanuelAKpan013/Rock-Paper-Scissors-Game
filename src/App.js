@@ -1,13 +1,16 @@
-import GameLayout from './components/GameLayout';
-import Navbar from './components/Navbar';
-import Rules from './components/Rules';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Picked from './components/Picked';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <GameLayout />
-      <Rules />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/picked" element={<Picked />} />
+        </Routes>
+      </Router>
     </>
   );
 }

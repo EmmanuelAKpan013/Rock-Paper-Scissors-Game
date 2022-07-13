@@ -81,11 +81,23 @@ body {
       top: 65px;
     }
 
+    &--rock-color {
+      border-color: $rock-gradient;
+    }
+
+    &--paper-color {
+      border-color: $paper-gradient;
+    }
+
+    &--scissors-color {
+      border-color: $scissors-gradient;
+    }
+
     &--rock {
       border-color: $rock-gradient;
       position: absolute;
       bottom: -200px;
-      left: 250px;
+      left: 240px;
     }
     &--paper {
       border-color: $paper-gradient;

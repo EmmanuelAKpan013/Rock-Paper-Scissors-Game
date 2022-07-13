@@ -96,11 +96,23 @@ body {
   top: 65px;
 }
 
+.game-layout .gamediv--rock-color {
+  border-color: #dc2e4e;
+}
+
+.game-layout .gamediv--paper-color {
+  border-color: #4865f4;
+}
+
+.game-layout .gamediv--scissors-color {
+  border-color: #ec9e0e;
+}
+
 .game-layout .gamediv--rock {
   border-color: #dc2e4e;
   position: absolute;
   bottom: -200px;
-  left: 250px;
+  left: 240px;
 }
 
 .game-layout .gamediv--paper {

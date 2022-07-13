@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #fff;
+  background: radial-gradient(circle, #1f3756, #141539);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 600px;
+  margin: 20px 30px;
+  padding: 20px;
+  border: 2px solid #606e85;
+  border-radius: 15px;
+}
+
+.navbar img {
+  width: 100%;
+  height: 70px;
+}
+
+.navbar .score {
+  background-color: #fff;
+  color: #2a46c0;
+  width: 90px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar .score-text {
+  color: #3b4363;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.rules {
+  border: 2px solid #606e85;
+  border-radius: 8px;
+  padding: 5px;
+  width: 90px;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.game-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.game-layout .triangle {
+  position: relative;
+  top: 100px;
+  left: 170px;
+}
+
+.game-layout .gamediv {
+  position: relative;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 18px solid;
+}
+
+.game-layout .gamediv img {
+  position: relative;
+  top: 65px;
+}
+
+.game-layout .gamediv--rock {
+  border-color: #dc2e4e;
+  position: absolute;
+  bottom: -200px;
+  left: 250px;
+}
+
+.game-layout .gamediv--paper {
+  border-color: #4865f4;
+  position: absolute;
+  top: -10px;
+  left: 60px;
+}
+
+.game-layout .gamediv--scissors {
+  border-color: #ec9e0e;
+  top: -35px;
+  right: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

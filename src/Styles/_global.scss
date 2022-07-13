@@ -1,0 +1,103 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+@import './config';
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #fff;
+  background: $background-gradient;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  margin: 20px 30px;
+  padding: 20px;
+  border: 2px solid $Header-outline;
+  border-radius: 15px;
+
+  img {
+    width: 100%;
+    height: 70px;
+  }
+
+  .score {
+    background-color: #fff;
+    color: $Score-text;
+    width: 90px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .score-text {
+    color: $Dark-text;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
+.rules {
+  border: 2px solid $Header-outline;
+  border-radius: 8px;
+  padding: 5px;
+  width: 90px;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.game-layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+
+  .triangle {
+    position: relative;
+    top: 100px;
+    left: 170px;
+  }
+
+  .gamediv {
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 18px solid;
+
+    img {
+      position: relative;
+      top: 65px;
+    }
+
+    &--rock {
+      border-color: $rock-gradient;
+      position: absolute;
+      bottom: -200px;
+      left: 250px;
+    }
+    &--paper {
+      border-color: $paper-gradient;
+      position: absolute;
+      top: -10px;
+      left: 60px;
+    }
+    &--scissors {
+      border-color: $scissors-gradient;
+      // position: absolute;
+      top: -35px;
+      right: 10px;
+    }
+  }
+}

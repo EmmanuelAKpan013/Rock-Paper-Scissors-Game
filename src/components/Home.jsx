@@ -2,11 +2,13 @@ import Navbar from './Navbar';
 import GameLayout from './GameLayout';
 import Rules from './Rules';
 
-function Home() {
+function Home({ score, setMyChoice }) {
   return (
     <>
-      <Navbar />
-      <GameLayout />
+      <Navbar score={score} />
+
+      <GameLayout setMyChoice={setMyChoice} />
+
       <Rules />
     </>
   );

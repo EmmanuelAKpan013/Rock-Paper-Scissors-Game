@@ -1,15 +1,15 @@
-import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 import TriangleImage from '../images/bg-triangle.svg';
 import RockImage from '../images/icon-rock.svg';
 import PaperImage from '../images/icon-paper.svg';
 import ScissorsImage from '../images/icon-scissors.svg';
 
-function GameLayout() {
-  const navigate = useNavigate();
+function GameLayout({ setMyChoice }) {
+  // const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate('/picked');
+  const setChoiceFn = (e) => {
+    setMyChoice(e.target.dataset.id);
+    // navigate('/picked');
   };
 
   return (
@@ -17,15 +17,34 @@ function GameLayout() {
       <div className="triangle">
         <img src={TriangleImage} alt="" />
       </div>
-      <div className="gamediv gamediv--rock" onClick={handleClick}>
-        <img src={RockImage} alt="rock-icon" />
-      </div>
-      <div className="gamediv gamediv--paper" onClick={handleClick}>
-        <img src={PaperImage} alt="" />
-      </div>
-      <div className="gamediv gamediv--scissors" onClick={handleClick}>
-        <img src={ScissorsImage} alt="" />
-      </div>
+      <Link to="/picked">
+        <div
+          className="gamediv gamediv--rock"
+          data-id="rock"
+          onClick={setChoiceFn}
+        >
+          <img src={RockImage} data-id="rock" alt="rock-icon" />
+        </div>
+      </Link>
+
+      <Link to="/picked">
+        <div
+          className="gamediv gamediv--paper"
+          data-id="paper"
+          onClick={setChoiceFn}
+        >
+          <img src={PaperImage} data-id="paper" alt="" />
+        </div>
+      </Link>
+      <Link to="/picked">
+        <div
+          className="gamediv gamediv--scissors"
+          data-id="scissors"
+          onClick={setChoiceFn}
+        >
+          <img src={ScissorsImage} data-id="scissors" alt="" />
+        </div>
+      </Link>
     </div>
   );
 }

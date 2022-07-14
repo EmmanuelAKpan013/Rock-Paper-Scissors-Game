@@ -89,6 +89,10 @@ body {
   height: 200px;
   border-radius: 50%;
   border: 18px solid;
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
 }
 
 .game-layout .gamediv img {
@@ -100,19 +104,44 @@ body {
   border-color: #dc2e4e;
 }
 
+.game-layout .gamediv--rock-color-winner {
+  border-color: #dc2e4e;
+  -webkit-box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.02), 0px 0px 0px 100px rgba(255, 255, 255, 0.03), 0px 0px 0px 150px rgba(255, 255, 255, 0.04);
+          box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.02), 0px 0px 0px 100px rgba(255, 255, 255, 0.03), 0px 0px 0px 150px rgba(255, 255, 255, 0.04);
+}
+
 .game-layout .gamediv--paper-color {
   border-color: #4865f4;
+}
+
+.game-layout .gamediv--paper-color-winner {
+  border-color: #4865f4;
+  -webkit-box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.02), 0px 0px 0px 100px rgba(255, 255, 255, 0.03), 0px 0px 0px 150px rgba(255, 255, 255, 0.04);
+          box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.02), 0px 0px 0px 100px rgba(255, 255, 255, 0.03), 0px 0px 0px 150px rgba(255, 255, 255, 0.04);
 }
 
 .game-layout .gamediv--scissors-color {
   border-color: #ec9e0e;
 }
 
+.game-layout .gamediv--scissors-color-winner {
+  border-color: #ec9e0e;
+  -webkit-box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.02), 0px 0px 0px 100px rgba(255, 255, 255, 0.03), 0px 0px 0px 150px rgba(255, 255, 255, 0.04);
+          box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.02), 0px 0px 0px 100px rgba(255, 255, 255, 0.03), 0px 0px 0px 150px rgba(255, 255, 255, 0.04);
+}
+
 .game-layout .gamediv--rock {
   border-color: #dc2e4e;
   position: absolute;
   bottom: -200px;
-  left: 240px;
+  left: 230px;
+  -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
+          box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
+}
+
+.game-layout .gamediv--rock:hover {
+  -webkit-transform: translateX(10px) scale(1.1);
+          transform: translateX(10px) scale(1.1);
 }
 
 .game-layout .gamediv--paper {
@@ -120,11 +149,57 @@ body {
   position: absolute;
   top: -10px;
   left: 60px;
+  -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
+          box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
+}
+
+.game-layout .gamediv--paper:hover {
+  -webkit-transform: translateX(10px) scale(1.1);
+          transform: translateX(10px) scale(1.1);
 }
 
 .game-layout .gamediv--scissors {
   border-color: #ec9e0e;
-  top: -35px;
-  right: 10px;
+  top: -30px;
+  right: 40px;
+  -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
+          box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
+}
+
+.game-layout .gamediv--scissors:hover {
+  -webkit-transform: translateX(10px) scale(1.1);
+          transform: translateX(10px) scale(1.1);
+}
+
+.result {
+  margin-top: 90px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: auto;
+  height: auto;
+}
+
+.result-text {
+  font-size: 35px;
+}
+
+.result .replay {
+  margin-top: -30px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.result .replay-rock {
+  color: #dc2e4e;
+}
+
+.result .replay-paper {
+  color: #4865f4;
+}
+
+.result .replay-scissors {
+  color: #ec9e0e;
 }
 /*# sourceMappingURL=styles.css.map */

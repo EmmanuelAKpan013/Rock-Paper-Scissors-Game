@@ -9,6 +9,7 @@ import ScissorsImage from '../images/icon-scissors.svg';
 function Picked({ score, setScore, myChoice }) {
   const [housePick, setHousePick] = useState();
   const [playerStatus, setPlayerStatus] = useState();
+  const [counter, setCounter] = useState(3);
 
   const housePickFn = () => {
     const options = ['rock', 'paper', 'scissors'];
@@ -56,8 +57,15 @@ function Picked({ score, setScore, myChoice }) {
   };
 
   useEffect(() => {
-    resultFn();
-  }, [housePick]);
+    const timer =
+      counter > 0
+        ? setInterval(() => {
+            setCounter(counter - 1);
+          }, 1000)
+        : resultFn();
+
+    return () => clearInterval(timer);
+  }, [counter, housePick]);
 
   return (
     <>
@@ -82,35 +90,45 @@ function Picked({ score, setScore, myChoice }) {
           </div>
         </div>
 
-        <div className="result">
-          <h3 className="result-text">{playerStatus}</h3>
-          <Link to="/">
-            <button
-              className={`replay replay-${
-                playerStatus === 'YOU WIN' ? `${myChoice}` : `${housePick}`
-              }`}
-            >
-              Play Again
-            </button>
-          </Link>
-        </div>
+        {counter === 0 ? (
+          <div className="result">
+            <h3 className="result-text">{playerStatus}</h3>
+            <Link to="/">
+              <button
+                className={`replay replay-${
+                  playerStatus === 'YOU WIN' ? `${myChoice}` : `${housePick}`
+                }`}
+              >
+                Play Again
+              </button>
+            </Link>
+          </div>
+        ) : (
+          ''
+        )}
 
         <div className="player-2">
           <h3>THE HOUSE PICKED</h3>
           <br />
-          <div
-            className={`${
-              playerStatus === 'YOU LOSE'
-                ? `gamediv gamediv--${housePick}-color-winner`
-                : `gamediv gamediv--${housePick}-color`
-            }`}
-          >
-            {housePick === 'rock' && <img src={RockImage} alt="rock-icon" />}
-            {housePick === 'paper' && <img src={PaperImage} alt="paper-icon" />}
-            {housePick === 'scissors' && (
-              <img src={ScissorsImage} alt="scissors-icon" />
-            )}
-          </div>
+          {counter === 0 ? (
+            <div
+              className={`${
+                playerStatus === 'YOU LOSE'
+                  ? `gamediv  gamediv--${housePick}-color-winner`
+                  : `gamediv  gamediv--${housePick}-color`
+              }`}
+            >
+              {housePick === 'rock' && <img src={RockImage} alt="rock-icon" />}
+              {housePick === 'paper' && (
+                <img src={PaperImage} alt="paper-icon" />
+              )}
+              {housePick === 'scissors' && (
+                <img src={ScissorsImage} alt="scissors-icon" />
+              )}
+            </div>
+          ) : (
+            <div className="counter-box">{counter}</div>
+          )}
         </div>
       </div>
 

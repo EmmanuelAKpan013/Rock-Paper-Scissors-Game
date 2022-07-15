@@ -1,5 +1,9 @@
-function Rules() {
-  return <div className="rules">RULES</div>;
-}
+// function Rules() {
+//   return (
+//     <div>
+//       <button className="btn-rules">RULES</button>
+//     </div>
+//   );
+// }
 
-export default Rules;
+// export default Rules;

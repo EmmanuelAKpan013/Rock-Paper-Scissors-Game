@@ -43,16 +43,6 @@ body {
   }
 }
 
-.rules {
-  border: 2px solid $Header-outline;
-  border-radius: 8px;
-  padding: 5px;
-  width: 90px;
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
-}
-
 .game-layout {
   display: flex;
   justify-content: space-around;
@@ -118,7 +108,7 @@ body {
     &--rock {
       border-color: $rock-gradient;
       position: absolute;
-      bottom: -200px;
+      bottom: -170px;
       left: 230px;
       box-shadow: inset 0px 5px 6px gray,
         0px 8px darken($color: $rock-gradient, $amount: 15%);
@@ -131,7 +121,7 @@ body {
       border-color: $paper-gradient;
       position: absolute;
       top: -10px;
-      left: 60px;
+      left: 55px;
       box-shadow: inset 0px 5px 6px gray,
         0px 8px darken($color: $paper-gradient, $amount: 15%);
 
@@ -143,7 +133,7 @@ body {
       border-color: $scissors-gradient;
       // position: absolute;
       top: -30px;
-      right: 40px;
+      right: 55px;
       box-shadow: inset 0px 5px 6px gray,
         0px 8px darken($color: $scissors-gradient, $amount: 15%);
 
@@ -197,4 +187,34 @@ body {
   border: 18px solid none;
   font-size: 3rem;
   color: #fff;
+}
+
+.footer {
+  width: 100vh;
+
+  .attribution {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1rem;
+  }
+
+  button {
+    position: absolute;
+    bottom: 1rem;
+    padding: 7px 25px;
+    right: 2rem;
+    border-radius: 0.4rem;
+    border: 3px solid $Header-outline;
+    color: lighten($color: $Header-outline, $amount: 20%);
+    background: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    &:hover {
+      background-color: rgba($color: #ffffff, $alpha: 0.8);
+      color: $Dark-text;
+      cursor: pointer;
+    }
+  }
 }

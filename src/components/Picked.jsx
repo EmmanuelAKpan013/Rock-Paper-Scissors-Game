@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
-import Rules from './Rules';
+import Footer from './Footer';
 import RockImage from '../images/icon-rock.svg';
 import PaperImage from '../images/icon-paper.svg';
 import ScissorsImage from '../images/icon-scissors.svg';
@@ -132,7 +132,7 @@ function Picked({ score, setScore, myChoice }) {
         </div>
       </div>
 
-      <Rules />
+      <Footer />
     </>
   );
 }

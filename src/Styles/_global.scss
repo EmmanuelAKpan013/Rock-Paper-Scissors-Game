@@ -379,7 +379,7 @@ body {
         border-color: $rock-gradient;
         position: absolute;
         bottom: -80px;
-        left: 290px;
+        left: 300px;
         box-shadow: inset 0px 5px 6px gray,
           0px 8px darken($color: $rock-gradient, $amount: 15%);
 
@@ -402,8 +402,8 @@ body {
       &--scissors {
         border-color: $scissors-gradient;
         // position: absolute;
-        top: -50px;
-        right: 150px;
+        top: -45px;
+        right: 160px;
         box-shadow: inset 0px 5px 6px gray,
           0px 8px darken($color: $scissors-gradient, $amount: 15%);
 

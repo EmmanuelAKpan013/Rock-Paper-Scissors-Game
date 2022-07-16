@@ -418,7 +418,7 @@ body {
     border-color: #dc2e4e;
     position: absolute;
     bottom: -80px;
-    left: 290px;
+    left: 300px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
   }
@@ -440,8 +440,8 @@ body {
   }
   .game-layout .gamediv--scissors {
     border-color: #ec9e0e;
-    top: -50px;
-    right: 150px;
+    top: -45px;
+    right: 160px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
   }

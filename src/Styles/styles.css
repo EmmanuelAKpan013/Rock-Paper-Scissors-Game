@@ -314,7 +314,7 @@ body {
 @media (max-width: 375px) {
   .navbar {
     position: relative;
-    left: 30%;
+    left: 27%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

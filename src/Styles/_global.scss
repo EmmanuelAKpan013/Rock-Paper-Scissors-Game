@@ -271,7 +271,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .navbar {
     position: relative;
     left: 25%;
@@ -340,6 +340,39 @@ body {
       img {
         position: relative;
         top: 35px;
+      }
+
+      &--rock-color {
+        border-color: $rock-gradient;
+
+        &-winner {
+          border-color: $rock-gradient;
+          box-shadow: 0px 0px 0px 50px rgba($color: #fff, $alpha: 0.04),
+            0px 0px 0px 100px rgba($color: #fff, $alpha: 0.03),
+            0px 0px 0px 150px rgba($color: #fff, $alpha: 0.02);
+        }
+      }
+
+      &--paper-color {
+        border-color: $paper-gradient;
+
+        &-winner {
+          border-color: $paper-gradient;
+          box-shadow: 0px 0px 0px 50px rgba($color: #fff, $alpha: 0.04),
+            0px 0px 0px 100px rgba($color: #fff, $alpha: 0.03),
+            0px 0px 0px 150px rgba($color: #fff, $alpha: 0.02);
+        }
+      }
+
+      &--scissors-color {
+        border-color: $scissors-gradient;
+
+        &-winner {
+          border-color: $scissors-gradient;
+          box-shadow: 0px 0px 0px 50px rgba($color: #fff, $alpha: 0.04),
+            0px 0px 0px 100px rgba($color: #fff, $alpha: 0.03),
+            0px 0px 0px 150px rgba($color: #fff, $alpha: 0.02);
+        }
       }
 
       &--rock {

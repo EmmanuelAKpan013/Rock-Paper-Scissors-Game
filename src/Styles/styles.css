@@ -311,7 +311,7 @@ body {
   left: 12%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .navbar {
     position: relative;
     left: 25%;
@@ -348,6 +348,82 @@ body {
     border-radius: 8px;
     font-size: 12px;
     font-weight: bold;
+  }
+  .game-layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+  .game-layout .triangle {
+    position: relative;
+    top: 60px;
+    left: 200px;
+    width: auto;
+    height: auto;
+  }
+  .game-layout .triangle img {
+    width: 200px;
+    height: 200px;
+  }
+  .game-layout .gamediv {
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 18px solid;
+    -webkit-transition: -webkit-transform 0.15s;
+    transition: -webkit-transform 0.15s;
+    transition: transform 0.15s;
+    transition: transform 0.15s, -webkit-transform 0.15s;
+  }
+  .game-layout .gamediv img {
+    position: relative;
+    top: 45px;
+  }
+  .game-layout .gamediv--rock {
+    border-color: #dc2e4e;
+    position: absolute;
+    bottom: -140px;
+    left: 250px;
+    -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
+            box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
+  }
+  .game-layout .gamediv--rock:hover {
+    -webkit-transform: translateX(10px) scale(1.1);
+            transform: translateX(10px) scale(1.1);
+  }
+  .game-layout .gamediv--paper {
+    border-color: #4865f4;
+    position: absolute;
+    top: -10px;
+    left: 160px;
+    -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
+            box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
+  }
+  .game-layout .gamediv--paper:hover {
+    -webkit-transform: translateX(10px) scale(1.1);
+            transform: translateX(10px) scale(1.1);
+  }
+  .game-layout .gamediv--scissors {
+    border-color: #ec9e0e;
+    top: -30px;
+    right: 55px;
+    -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
+            box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
+  }
+  .game-layout .gamediv--scissors:hover {
+    -webkit-transform: translateX(10px) scale(1.1);
+            transform: translateX(10px) scale(1.1);
   }
 }
 /*# sourceMappingURL=styles.css.map */

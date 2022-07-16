@@ -270,7 +270,8 @@ body {
     left: 12%;
   }
 }
-@media (max-width: 375px) {
+
+@media (max-width: 500px) {
   .navbar {
     position: relative;
     left: 25%;
@@ -302,6 +303,81 @@ body {
       border-radius: 8px;
       font-size: 12px;
       font-weight: bold;
+    }
+  }
+
+  .game-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+
+    .triangle {
+      position: relative;
+      top: 60px;
+      left: 200px;
+      width: auto;
+      height: auto;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .gamediv {
+      position: relative;
+      background-color: white;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 18px solid;
+      transition: transform 0.15s;
+
+      img {
+        position: relative;
+        top: 45px;
+      }
+
+      &--rock {
+        border-color: $rock-gradient;
+        position: absolute;
+        bottom: -140px;
+        left: 250px;
+        box-shadow: inset 0px 5px 6px gray,
+          0px 8px darken($color: $rock-gradient, $amount: 15%);
+
+        &:hover {
+          transform: translateX(10px) scale(1.1);
+        }
+      }
+      &--paper {
+        border-color: $paper-gradient;
+        position: absolute;
+        top: -10px;
+        left: 160px;
+        box-shadow: inset 0px 5px 6px gray,
+          0px 8px darken($color: $paper-gradient, $amount: 15%);
+
+        &:hover {
+          transform: translateX(10px) scale(1.1);
+        }
+      }
+      &--scissors {
+        border-color: $scissors-gradient;
+        // position: absolute;
+        top: -30px;
+        right: 55px;
+        box-shadow: inset 0px 5px 6px gray,
+          0px 8px darken($color: $scissors-gradient, $amount: 15%);
+
+        &:hover {
+          transform: translateX(10px) scale(1.1);
+        }
+      }
     }
   }
 }

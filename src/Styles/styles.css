@@ -449,5 +449,39 @@ body {
     -webkit-transform: translateX(10px) scale(1.1);
             transform: translateX(10px) scale(1.1);
   }
+  .footer {
+    width: 100vh;
+  }
+  .footer .attribution {
+    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 1rem;
+  }
+  .footer .attribution a {
+    color: white;
+  }
+  .footer .attribution #name {
+    text-decoration: none;
+  }
+  .footer button {
+    position: absolute;
+    bottom: 2rem;
+    right: 6rem;
+    padding: 7px 25px;
+    border-radius: 0.4rem;
+    border: 3px solid #606e85;
+    color: #97a2b4;
+    background: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .footer button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #3b4363;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

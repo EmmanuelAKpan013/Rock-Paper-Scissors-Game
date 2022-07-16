@@ -435,6 +435,42 @@ body {
       height: auto;
     }
 
+    .result {
+      position: relative;
+      top: 100px;
+      left: -15px;
+      // margin-top: 90px;
+      // margin-right: 20px;
+      // margin-left: 20px;
+      width: auto;
+      height: auto;
+      // border: 1px solid red;
+
+      &-text {
+        font-size: 40px;
+      }
+
+      .replay {
+        margin-top: -30px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+
+        &-rock {
+          color: $rock-gradient;
+        }
+
+        &-paper {
+          color: $paper-gradient;
+        }
+
+        &-scissors {
+          color: $scissors-gradient;
+        }
+      }
+    }
+
     .counter-box {
       display: flex;
       align-items: center;

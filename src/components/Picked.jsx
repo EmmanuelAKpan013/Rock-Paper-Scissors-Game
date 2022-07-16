@@ -90,7 +90,7 @@ function Picked({ score, setScore, myChoice }) {
           </div>
         </div>
 
-        {/* {counter === 0 ? (
+        {counter === 0 ? (
           <div className="result">
             <h3 className="result-text">{playerStatus}</h3>
             <Link to="/">
@@ -105,7 +105,7 @@ function Picked({ score, setScore, myChoice }) {
           </div>
         ) : (
           ''
-        )} */}
+        )}
 
         <div className="player-2">
           <h3>THE HOUSE PICKED</h3>

@@ -478,6 +478,32 @@ body {
     width: auto;
     height: auto;
   }
+  .game-layout .result {
+    position: relative;
+    top: 100px;
+    left: -15px;
+    width: auto;
+    height: auto;
+  }
+  .game-layout .result-text {
+    font-size: 40px;
+  }
+  .game-layout .result .replay {
+    margin-top: -30px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  .game-layout .result .replay-rock {
+    color: #dc2e4e;
+  }
+  .game-layout .result .replay-paper {
+    color: #4865f4;
+  }
+  .game-layout .result .replay-scissors {
+    color: #ec9e0e;
+  }
   .game-layout .counter-box {
     display: -webkit-box;
     display: -ms-flexbox;

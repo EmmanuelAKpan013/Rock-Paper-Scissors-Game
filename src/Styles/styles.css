@@ -478,6 +478,24 @@ body {
     width: auto;
     height: auto;
   }
+  .game-layout .counter-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 18px solid none;
+    font-size: 3rem;
+    color: #fff;
+  }
   .footer {
     width: 100vh;
   }

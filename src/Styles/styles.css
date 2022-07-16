@@ -459,7 +459,7 @@ body {
             flex-direction: column-reverse;
     position: relative;
     margin: 5px 20px;
-    left: 80px;
+    left: 120px;
     top: -30px;
     width: auto;
     height: auto;
@@ -473,7 +473,7 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     position: relative;
-    right: 90px;
+    right: 120px;
     top: -30px;
     width: auto;
     height: auto;

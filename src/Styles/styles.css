@@ -486,7 +486,7 @@ body {
   .modalContainer {
     position: relative;
     top: -280px;
-    left: 190px;
+    left: 210px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

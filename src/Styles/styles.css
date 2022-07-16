@@ -418,7 +418,7 @@ body {
     border-color: #dc2e4e;
     position: absolute;
     bottom: -80px;
-    left: 270px;
+    left: 290px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
   }
@@ -430,7 +430,7 @@ body {
     border-color: #4865f4;
     position: absolute;
     top: -15px;
-    left: 190px;
+    left: 210px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
   }

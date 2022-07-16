@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Picked from './components/Picked';
 
 function App() {
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(10);
   const [myChoice, setMyChoice] = useState('');
 
   return (

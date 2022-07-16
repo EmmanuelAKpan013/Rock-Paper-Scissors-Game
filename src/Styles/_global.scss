@@ -390,7 +390,7 @@ body {
       &--paper {
         border-color: $paper-gradient;
         position: absolute;
-        top: -8px;
+        top: -6px;
         left: 210px;
         box-shadow: inset 0px 5px 6px gray,
           0px 8px darken($color: $paper-gradient, $amount: 15%);

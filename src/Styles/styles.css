@@ -429,7 +429,7 @@ body {
   .game-layout .gamediv--paper {
     border-color: #4865f4;
     position: absolute;
-    top: -8px;
+    top: -6px;
     left: 210px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;

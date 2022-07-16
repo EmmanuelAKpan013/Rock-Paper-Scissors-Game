@@ -1,16 +1,31 @@
+import { useState } from 'react';
+import Modal from './Modal';
+
 function Footer() {
+  const [openModal, setOpenModal] = useState(false);
+
+  const toggleModal = () => {
+    setOpenModal(!openModal);
+  };
   return (
     <>
       <footer className="footer">
-        <div class="attribution">
+        <div className="attribution">
           Challenge by{' '}
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor
           </a>
-          . Coded by <a href="#">Emmanuel Akpan</a>.
+          . Coded by{' '}
+          <a id="name" href="#">
+            Emmanuel Akpan
+          </a>
+          .
         </div>
-        <button className="rules">RULES</button>
+        <button className="rules" onClick={toggleModal}>
+          RULES
+        </button>
       </footer>
+      {openModal ? <Modal setOpenModal={setOpenModal} /> : null}
     </>
   );
 }

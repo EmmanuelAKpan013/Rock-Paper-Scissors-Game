@@ -7,6 +7,7 @@ import Picked from './components/Picked';
 function App() {
   const [score, setScore] = useState(0);
   const [myChoice, setMyChoice] = useState('');
+
   return (
     <>
       <Router>

@@ -314,7 +314,7 @@ body {
 @media (max-width: 375px) {
   .navbar {
     position: relative;
-    left: 27%;
+    left: 26.5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -377,8 +377,8 @@ body {
   .game-layout .gamediv {
     position: relative;
     background-color: white;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 18px solid;
     -webkit-transition: -webkit-transform 0.15s;
@@ -388,7 +388,7 @@ body {
   }
   .game-layout .gamediv img {
     position: relative;
-    top: 35px;
+    top: 20px;
   }
   .game-layout .gamediv--rock-color {
     border-color: #dc2e4e;
@@ -417,8 +417,8 @@ body {
   .game-layout .gamediv--rock {
     border-color: #dc2e4e;
     position: absolute;
-    bottom: -120px;
-    left: 250px;
+    bottom: -80px;
+    left: 270px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #a11b34;
   }
@@ -429,8 +429,8 @@ body {
   .game-layout .gamediv--paper {
     border-color: #4865f4;
     position: absolute;
-    top: -35px;
-    left: 155px;
+    top: -15px;
+    left: 190px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #0d31e3;
   }
@@ -441,7 +441,7 @@ body {
   .game-layout .gamediv--scissors {
     border-color: #ec9e0e;
     top: -50px;
-    right: 120px;
+    right: 150px;
     -webkit-box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
             box-shadow: inset 0px 5px 6px gray, 0px 8px #a46e0a;
   }

@@ -274,7 +274,7 @@ body {
 @media (max-width: 375px) {
   .navbar {
     position: relative;
-    left: 27%;
+    left: 26.5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,15 +331,15 @@ body {
     .gamediv {
       position: relative;
       background-color: white;
-      width: 130px;
-      height: 130px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       border: 18px solid;
       transition: transform 0.15s;
 
       img {
         position: relative;
-        top: 35px;
+        top: 20px;
       }
 
       &--rock-color {
@@ -378,8 +378,8 @@ body {
       &--rock {
         border-color: $rock-gradient;
         position: absolute;
-        bottom: -120px;
-        left: 250px;
+        bottom: -80px;
+        left: 270px;
         box-shadow: inset 0px 5px 6px gray,
           0px 8px darken($color: $rock-gradient, $amount: 15%);
 
@@ -390,8 +390,8 @@ body {
       &--paper {
         border-color: $paper-gradient;
         position: absolute;
-        top: -35px;
-        left: 155px;
+        top: -15px;
+        left: 190px;
         box-shadow: inset 0px 5px 6px gray,
           0px 8px darken($color: $paper-gradient, $amount: 15%);
 
@@ -403,7 +403,7 @@ body {
         border-color: $scissors-gradient;
         // position: absolute;
         top: -50px;
-        right: 120px;
+        right: 150px;
         box-shadow: inset 0px 5px 6px gray,
           0px 8px darken($color: $scissors-gradient, $amount: 15%);
 

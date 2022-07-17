@@ -413,20 +413,31 @@ body {
       }
     }
 
-    .player-1 {
+    .player-1-waiting {
       display: flex;
       flex-direction: column-reverse;
       position: relative;
       margin: 5px 20px;
       left: 80px;
-
       top: -30px;
       width: auto;
       height: auto;
       border: 3px solid red;
     }
 
-    .player-2 {
+    .player-1 {
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      margin: 5px 20px;
+      left: 120px;
+      top: -30px;
+      width: auto;
+      height: auto;
+      border: 3px solid red;
+    }
+
+    .player-2-waiting {
       display: flex;
       flex-direction: column-reverse;
       position: relative;
@@ -437,15 +448,26 @@ body {
       border: 3px solid red;
     }
 
+    .player-2 {
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      right: 140px;
+      top: -30px;
+      width: auto;
+      height: auto;
+      border: 3px solid red;
+    }
+
     .result {
       position: relative;
-      top: 130px;
+      top: 160px;
       left: -15px;
       // margin-top: 90px;
       // margin-right: 20px;
       // margin-left: 20px;
       width: 150px;
-      height: 150px;
+      height: 100px;
       border: 1px solid red;
 
       &-text {
@@ -456,7 +478,9 @@ body {
       }
 
       .replay {
-        margin-top: -30px;
+        position: relative;
+        top: -50px;
+        // margin-top: -30px;
         width: 140px;
         padding: 10px;
         border-radius: 8px;

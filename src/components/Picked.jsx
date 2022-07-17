@@ -72,7 +72,7 @@ function Picked({ score, setScore, myChoice }) {
       <Navbar score={score} />
 
       <div className="game-layout">
-        <div className="player-1">
+        <div className={counter > 0 ? 'player-1-waiting' : 'player-1'}>
           <h3>YOU PICKED</h3>
           <br />
           <div
@@ -107,7 +107,7 @@ function Picked({ score, setScore, myChoice }) {
           ''
         )}
 
-        <div className="player-2">
+        <div className={counter > 0 ? 'player-2-waiting' : 'player-2'}>
           <h3>THE HOUSE PICKED</h3>
           <br />
           {counter === 0 ? (

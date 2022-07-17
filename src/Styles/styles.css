@@ -311,7 +311,7 @@ body {
   left: 12%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .navbar {
     position: relative;
     left: 26.5%;

@@ -347,9 +347,9 @@ body {
 
         &-winner {
           border-color: $rock-gradient;
-          box-shadow: 0px 0px 0px 50px rgba($color: #fff, $alpha: 0.04),
-            0px 0px 0px 100px rgba($color: #fff, $alpha: 0.03),
-            0px 0px 0px 150px rgba($color: #fff, $alpha: 0.02);
+          box-shadow: 0px 0px 0px 20px rgba($color: #fff, $alpha: 0.04),
+            0px 0px 0px 40px rgba($color: #fff, $alpha: 0.03),
+            0px 0px 0px 60px rgba($color: #fff, $alpha: 0.02);
         }
       }
 
